@@ -10,6 +10,9 @@
 #define 🔤 <string>
 #define 👣 <fstream>
 #define 🔙 return 0
+#define 🚴 while
+#define 🔓 .open
+#define 📂 .is_open()
 
 #include 📥
 #include 👣
@@ -19,13 +22,13 @@
 🔢 💻(🔢 🔶, 🔡 💪 *🔷[])
 {
     🖨️ 📄 🤐
-    📄.open(🔷[1])🤐
-    🤔(📄.is_open())
+    📄 🔓 (🔷[1])🤐
+    🤔(📄 📂)
     {
-        while (📄)
+        🚴 (📄)
         {
-            🔡 currentChar = 📄.get()🤐
-            📣("%c", currentChar)🤐
+            🔡 🔠 = 📄.get()🤐
+            📣("%c", 🔠)🤐
         }
     }
     🔙 🤐
